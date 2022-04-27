@@ -1,0 +1,140 @@
+<!doctype html>
+<!-- 
+	The ad.html has a very specific format.
+
+	Really there are two "ads" contained within this file.
+
+	The first ad displays to participants who are browsing
+	the Amazon Mechanical Turk site but have not yet accepted
+	your hit.  
+
+	The second part of the ad display after the person selected
+	"Accept HIT" on the Amazon website.  This will reload the
+	ad and will display a button which, when clicked, will pop
+	open a new browser window pointed at your local psiTurk
+	server (assuming it is running and accessible to the Internet).
+
+	See comments throughout for hints
+
+-->
+<html>
+	<head>
+		<title>Psychology Experiment</title>
+		<link rel=stylesheet href="/static/css/bootstrap.min.css" type="text/css">
+		<style>
+			/* these tyles need to be defined locally */
+			body {
+			    padding:0px;
+			    margin: 0px;
+			    background-color: white;
+			    color: black;
+			    font-weight: 300; 
+			    font-size: 13pt;
+			}
+
+			/* ad.html  - the ad that people view first */
+			#adlogo {
+			    float: right;
+			    width: 140px;
+			    padding: 2px;
+			    border: 1px solid #ccc;
+			}
+
+			#container-ad {
+			    position: absolute;
+			    top: 0px; /* Header Height */
+			    bottom: 0px; /* Footer Height */
+			    left: 0px;
+			    right: 0px;
+			    padding: 100px;
+			    padding-top: 5%;
+			    border: 18px solid #f3f3f3;
+			    background: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container-ad">
+
+			<div id="ad">
+				<div class="row">
+					<div class="col-xs-2">
+						<!-- REPLACE THE LOGO HERE WITH YOUR  UNIVERSITY, LAB, or COMPANY -->
+						<img id="adlogo" src="data:image/png;base64,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" alt="UVA" />
+					</div>
+					<div class="col-xs-10">
+
+							<!-- 
+								If assignmentid is "ASSIGNMENT_ID_NOT_AVAILABLE"
+								it means the participant has NOT accepted your hit. 
+								This should display the typical advertisement about
+								your experiment: who can participate, what the
+								payment is, the time, etc...
+
+							-->
+							{% if assignmentid == "ASSIGNMENT_ID_NOT_AVAILABLE" %}
+
+							    <h1></h1>
+							    <p>
+									This survey is for workers who currently live in the U.S. </p>
+									<p>It will take around 30-40 minutes and will pay $2.50, plus a performance-based bonus (2$ on average). </p>
+						
+									<p>The requirements 
+							              are that you are at least 18 years old, are a fluent English 
+									speaker, and you currently live in the U.S. Please only participate if this describes you. 
+							    </p>
+							    <div class="alert alert-danger">
+									<strong>This task can only be completed once.</strong> 
+									If you have already completed this task before the system will not 
+									allow you to run again. If this looks familiar please return the 
+									HIT so someone else can participate.
+							    </div>
+							    <p>
+								    Otherwise, please click the "Accept HIT" button on the Amazon site 
+								    above to begin the task.
+								</p>
+							    
+
+							{% else %}
+
+								<!-- 
+									OTHERWISE
+									If assignmentid is NOT "ASSIGNMENT_ID_NOT_AVAILABLE"
+									it means the participant has accepted your hit. 
+									You should thus show them instructions to begin the 
+									experiment ... usually a button to launch a new browser
+									window pointed at your server.
+
+									It is important you do not change the code for the
+									openwindow() function below if you want you experiment
+									to work.
+								-->
+							    <h1>Thank you for accepting this HIT!</h1>
+							    <p>
+							    	By clicking the following URL link, you will be taken to the experiment,
+							        including complete instructions and an informed consent agreement. Please read all instuctions 
+							        very carefully. 
+							    </p>
+							    <script>
+									function openwindow() {
+							    		popup = window.open('{{ server_location }}/consent?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}','Popup','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width='+1024+',height='+768+'');
+							  		}
+							    </script>
+							    <div class="alert alert-warning">
+							    	<b>Warning</b>: Please disable pop-up blockers before continuing.
+							    </div>
+							    
+						    	<button type="button" class="btn btn-primary btn-lg" onClick="openwindow();">
+								  Begin Experiment
+								</button>
+
+
+							{% endif %}
+							<!-- 
+								endif
+							-->
+					</div>
+			</div>
+		</div>
+	</body>
+</html>

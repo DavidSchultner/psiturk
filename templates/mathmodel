@@ -1,0 +1,9 @@
+
+I fixed (& improved & tested) the model, so now it works for any values of the prior (including negative values and 0) by taking the ratio of both priors to scale up (or down) the impact of PEs and adding a constant of 100 to priors (so they’re always non-negative):
+For choices of Group A members:
+Qnew,A = Qold,A + ([PriorA+100]/[PriorB+100])^aI*aG*PEpos + aL/([PriorA+100]/[PriorB+100])^aI * PEneg
+Conversely, for choices of Group B members we just flip the priors:
+Qnew,B = Qold,B + ([PriorB+100]/[PriorA+100])^aI*aG*PEpos + aL/([PriorB+100]/[PriorA+100])^aI * PEneg
+where 0<=aI<=10 (upper limit arbitrary, but values explode very quickly) captures the impact of the difference in priors on learning.
+ A cool feature of this is that If aI=0, the prior term just reduces to 1 and there’s no effect of Priors on learning rates. If aI>1, prediction errors are amplified, if 0<aI<1, they’re diminished.
+(other parameters are: aG: learning rate for gains, aL: learning rate for losses, and temp of course, so it would become a 4 parameter model)

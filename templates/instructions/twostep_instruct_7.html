@@ -1,0 +1,64 @@
+<script>
+    
+        
+    </script>
+
+<div class="instruct" id="main">
+    
+    <p><strong>Here is a short quiz to test if you understood the instructions correctly.</p>
+        <p>If you missed any important things, we will bring you to go through the instructions again.</strong></p>
+    
+    
+    <form id="postquiz" action="done" method="post">
+        <table>
+            
+            <tr class="question">
+                <td class="questiontext">
+                    <strong>Does the chance that a 'coin box' has a coin inside it change over time?</strong>
+                </td>
+                <td class="answer">
+                    <select id="CoinBoxGoodness" name="CoinBoxGoodness">
+                        <option value="4">Yes! It changes slowly change over time and you need to track it</option>
+                        <option value="3">No, coins are delivered completely randomly and no boxes are ever good or bad</option>
+                        <option value="2">No, some are always good and others are always bad. This will not change</option>
+                        <option value="1" SELECTED>I don't know</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr class="question">
+                <td class="questiontext">
+                    Does the chance that boxes in the black screen lead to a certain orange or blue screen change over time?
+                </td>
+                <td class="answer">
+                    <select id="ChoiceBoxGoodness" name="ChoiceBoxGoodness">
+                        <option value="4">Yes! It changes slowly change over time and you need to track it</option>
+                        <option value="3">No, the relationship between choices and second stages is completely unpredictable</option>
+                        <option value="2">No, the chances are about 70% and this does not change</option>
+                        <option value="1" SELECTED>I don't know</option>
+                    </select>
+                </td>
+            </tr>
+            
+            
+            <tr class="question">
+                <td class="questiontext">
+                    <strong>Are the same 'coin boxes' available in the orange and blue screens?</strong>
+                </td>
+                <td class="answer">
+                    <select id="Equity" name="Equity">
+                        <option value="4">Yes! It does not matter what state you are in, you can always find the coin box you want</option>
+                        <option value="3">No. The orange and blue states have different coin boxes in them</option>
+                        <option value="2">Sometimes you can find the same coin box in each of these orange and blue states</option>
+                        <option value="1" SELECTED>I don't know</option>
+                    </select>
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+        </table>
+        <input type="button" class="continue" id="continue" value="Continue"></input>
+        </div>

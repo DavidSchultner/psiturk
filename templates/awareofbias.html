@@ -1,0 +1,59 @@
+<script type="text/javascript">
+  keydownfun = function() {}; // Should unbind keys.
+</script>
+
+<div id="container-questionnaire">
+
+    <p>While observing choices in the first half of the game, were you aware of a preference for one group in the player's choices?</p>
+
+                
+
+ <!--    <div class="instructions well">
+
+        <form id="postquiz" action="debrief" method="post">
+
+
+ 
+            <div class="row question">
+                <div class="col-md-4" style="width:100px; margin:auto">
+                    <p align="left">
+                        <input id="awareofbias1" name="awareofbias1" type="radio" value="G"> Yes, for Group Green <br />
+                        <input id="awareofbias1" name="awareofbias1" type="radio" value="B"> Yes, for Group Blue <br />
+                        <input id="awareofbias1" name="awareofbias1" type="radio" value="no"> No <br /></p>
+                </div>
+            </div>
+
+
+
+<script>
+
+$('#awareofbias1').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#next').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#next').attr("disabled", true);
+    }
+});
+</script>
+
+ -->
+
+<div class="avatar boy"></div>
+<input type="radio" name="aware" id="awareG" value="G" />Yes, for Group Green
+<div class="avatar girl"></div>
+<input type="radio" name="aware" id="awareB" value="B" />Yes, for Group Blue
+<div class="avatar girl"></div>
+<input type="radio" name="aware" id="awareN" value="N" />No
+
+<br>
+<div>
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue" disabled="TRUE">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+</div>
+
+<script>
+$(":input").change(function () {$("#next").prop("disabled", false);});
+</script>

@@ -1,0 +1,36 @@
+<script>
+
+setTimeout(function(){ $('div#nextButton').css('visibility','visible'); }, INST_WAIT_TIME);
+
+</script>
+
+<h1>Observe Choices</h1>
+
+You will now observe the choices of the other player.
+
+<div class="instruct" id="main">
+
+<p>Pay attention! At times we will ask you to report what you just saw – namely whether the Decider chosen on the last round came from Group B or Group G. When prompted, press the corresponding key — “B“ or “G“ — to answer.</p>
+
+<img src="static/images/catchtrial.jpg" alt="check" style="width:350px;height:308px;">
+
+<br /><br />
+
+<div id="nextButton" style="visibility: hidden;">
+When you're ready to continue, click <strong>Next</strong>.	
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!-- no previous button on first screen -->
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                Next <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

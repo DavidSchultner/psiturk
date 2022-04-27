@@ -1,0 +1,38 @@
+<script>
+
+setTimeout(function(){ $('div#nextButton').css('visibility','visible'); }, INST_WAIT_TIME);
+
+</script>
+
+
+<div class="instruct" id="main">
+
+<!-- <h1>fractals -> fractals </h1> -->
+
+<p>You have reached the final phase: now, you get to MAKE YOUR OWN CHOICES. On each round, choose the person who you think will SHARE with you, in order to win as many POINTS as possible. The more POINTS you win, the more DOLLARS you receive at the end of the game.</p>
+
+<p>Here’s how you play: Every choice will be displayed for 2 seconds. You can make your choice as soon as the faces appear in each round. Press the left arrow key to choose the LEFT person, and the right arrow key to choose the RIGHT. You will not receive feedback, but the computer will record your choices and calculate your WINNINGS at the end. 
+</p>
+
+<p>If you are not sure, follow your gut instinct about who to choose. You must always respond within 2 seconds.</p> 
+
+<img src="../../static/images/image_arrows.jpg" alt="arrows" style="width:500px;height:300px;">
+
+<div id="nextButton" style="visibility: hidden;">
+When you're ready to start, press <strong>BEGIN</strong>.	
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!-- no previous button on first screen -->
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                BEGIN <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

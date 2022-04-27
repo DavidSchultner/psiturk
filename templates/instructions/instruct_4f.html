@@ -1,0 +1,47 @@
+
+<script>
+
+setTimeout(function(){ $('div#nextButton').css('visibility','visible'); }, INST_WAIT_TIME);
+
+</script>
+
+<div class="instruct" id="main">
+
+<p>These are the avatars of players from each group</p>
+
+<p>The colors of the avatars’ shirts will help you tell Group B and Group G members apart throughout the game. </p>
+
+
+
+<center>Group B members:</center>
+<img src="../../static/images/face1f.jpg" alt="Face" style="width:100px;height:100px;">
+<img src="../../static/images/face2f.jpg" alt="Face" style="width:100px;height:100px;">
+<img src="../../static/images/face3f.jpg" alt="Face" style="width:100px;height:100px;">
+<img src="../../static/images/face4f.jpg" alt="Face" style="width:100px;height:100px;">
+
+<center>Group G members:</center>
+<img src="../../static/images/face5f.jpg" alt="Face" style="width:100px;height:100px;">
+<img src="../../static/images/face6f.jpg" alt="Face" style="width:100px;height:100px;">
+<img src="../../static/images/face7f.jpg" alt="Face" style="width:100px;height:100px;">
+<img src="../../static/images/face8f.jpg" alt="Face" style="width:100px;height:100px;">
+
+
+<br /><br />
+<div id="nextButton" style="visibility: hidden;">
+When you're ready to continue, click <strong>Next</strong>.	
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!-- no previous button on first screen -->
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                Next <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Psychology Experiment</title>
+		<link rel=stylesheet href="/static/css/bootstrap.min.css" type="text/css">
+		<link rel=stylesheet href="/static/css/style.css" type="text/css">
+
+	</head>
+	<body >
+		<div id="container-ad">
+
+			<div id="ad">
+				<div class="row">
+					<div class="col-xs-2">
+						<!-- REPLACE THE LOGO HERE WITH YOUR  UNIVERSITY, LAB, or COMPANY -->
+					</div>
+					<div class="col-xs-10">
+						<h1>Task complete!</h1>
+						<hr>
+					    <div class="alert alert-warning">
+					    	<p>You have completed the HIT, you may now submit on Mechanical Turk.</p>
+					    	<p>Copy and paste the following code to submit the HIT: <b><span id="code"></span></b></p>
+					    </div>
+					</div>
+			</div>
+		</div>
+				<script type="text/javascript">
+			
+			var mturkcode = Math.floor(Math.random() * 90000000 +10000000);
+			document.getElementById("code").innerHTML = mturkcode;
+			//setTimeout(redir, 3000)
+			//function redir(){
+			//	window.open("http://google.com","_self");
+			//}
+		</script>
+	</body>
+</html>

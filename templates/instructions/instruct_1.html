@@ -1,0 +1,33 @@
+<script>
+
+setTimeout(function(){ $('div#nextButton').css('visibility','visible'); }, INST_WAIT_TIME);
+
+</script>
+
+
+<div class="instruct" id="main">
+
+<!-- <h1>fractals -> fractals </h1> -->
+
+<p>In this study we are interested in how people form impressions about others. Here, you will form impressions of people as you play a money sharing game, by learning which people tend to SHARE or NOT SHARE money.</p>
+
+<p>However, before you play this game yourself, you will observe another person playing with the same set of people. This will help you learn about the other players before it’s your turn to play.</p>
+
+<div id="nextButton" style="visibility: hidden;">
+When you're ready to continue, click <strong>Next</strong>.	
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!-- no previous button on first screen -->
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                Next <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

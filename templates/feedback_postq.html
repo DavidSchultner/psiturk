@@ -1,0 +1,279 @@
+<script type="text/javascript">
+  keydownfun = function() {}; // Should unbind keys.
+</script>
+
+<div id="container-questionnaire">
+    <h1></h1>
+
+    <p>You are finished with the game. Before you wrap up, please answer some questions, starting with the one below.</p>
+    <hr>
+                
+        <p>During the observation phase, did you focus on the Chooser's actions or the players' feedback?</p> 
+        
+
+<form>
+    <input type="radio" name="feedback_aware" value="actions" id="feedback_aware1"> 
+    <label for="actions">actions</label>
+    <br>
+    <input type="radio" name="feedback_aware" value="feedback" id="feedback_aware2">
+    <label for="feedback">feedback</label>
+        <br>
+        <input type="radio" name="feedback_aware" value="both" id="feedback_aware3">
+    <label for="both">both equally</label>
+        <br>
+        <input type="radio" name="feedback_aware" value="dontknow" id="feedback_aware4">
+    <label for="dontknow">I do not know</label>
+</form>
+
+
+<br>
+<br>
+
+
+
+<style>
+input[type=range] {
+  height: 38px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  background: transparent;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #3071A9;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -11px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #3071A9;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #3071A9;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #3071A9;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071A9;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #000000;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071A9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #3071A9;
+}
+</style>
+
+<br /><br />
+
+
+<script>
+$('#feedback_aware1').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#next').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#next').attr("disabled", true);
+    }
+});
+</script>
+<script>
+$('#feedback_aware2').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#next').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#next').attr("disabled", true);
+    }
+});
+</script>
+<script>
+$('#feedback_aware3').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#next').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#next').attr("disabled", true);
+    }
+});
+</script>
+<script>
+$('#feedback_aware4').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#next').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#next').attr("disabled", true);
+    }
+});
+</script>
+<!-- <script>
+$('#polpost5').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#next').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#next').attr("disabled", true);
+    }
+});
+</script>
+<script>
+$('#polpost6').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#next').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#next').attr("disabled", true);
+    }
+});
+</script>
+<script>
+$('#polpost7').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#next').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#next').attr("disabled", true);
+    }
+});
+</script>
+<script>
+$('#polpost8').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#next').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#next').attr("disabled", true);
+    }
+});
+</script>
+<script>
+$('#polpost9').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#next').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#next').attr("disabled", true);
+    }
+});
+</script>
+<script>
+$('#polpost10').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#next').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#next').attr("disabled", true);
+    }
+});
+</script>
+<script>
+$('#polpost11').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#next').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#next').attr("disabled", true);
+    }
+});
+</script> -->
+
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-7">
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue" disabled="TRUE">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,228 @@
+<script type="text/javascript">
+  keydownfun = function() {}; // Should unbind keys.
+</script>
+
+<div id="container-questionnaire">
+    <h1>Background Info</h1>
+
+    <hr>
+
+    <div class="instructions well">
+
+        <form id="postquiz" action="debrief" method="post">
+
+
+            <!-- beginning of a question -->
+             <div class="row question">
+                <div class="col-md-8">
+                   In which state do you currently reside?
+                </div>
+                <div class="col-md-4">
+                    <select id="reside" name="reside">
+                        <option value="52"SELECTED>Alabama</option>
+                        <option value="51">Alaska</option>
+                        <option value="50">Arizona</option>
+                        <option value="49">Arkansas</option>
+                        <option value="48">California</option>
+                        <option value="47" >Colorado</option>
+                        <option value="47" >Connecticut</option>
+                        <option value="46">Delaware</option>
+                        <option value="45">District of Columbia</option>
+                        <option value="44">Florida</option>
+                        <option value="43">Georgia</option>
+                        <option value="42">Hawaii</option>
+                        <option value="41">Idaho</option>
+                        <option value="40">Illinois</option>
+                        <option value="39">Indiana</option>
+                        <option value="38" >Iowa</option>
+                        <option value="37">Kansas</option>
+                        <option value="36">Kentucky</option>
+                        <option value="35">Louisiana</option>
+                        <option value="34">Maine</option>
+                        <option value="33">Maryland</option>
+                        <option value="32">Massachusetts</option>
+                        <option value="31">Michigan</option>
+                        <option value="30">Minnesota</option>
+                        <option value="29" >Mississippi</option>
+                        <option value="28">Missouri</option>
+                        <option value="27">Montana</option>
+                        <option value="26">Nebraska</option>
+                        <option value="25">Nevada</option>
+                        <option value="24">New Hampshire</option>
+                        <option value="23">New Jersey</option>
+                        <option value="22">New Mexico</option>
+                        <option value="21">New York</option>
+                        <option value="20" >North Carolina</option>
+                        <option value="19">North Dakota</option>
+                        <option value="18">Ohio</option>
+                        <option value="17">Oklahoma</option>
+                        <option value="16">Oregon</option>
+                        <option value="15">Pennsylvania</option>
+                        <option value="14">Puerto Rico</option>
+                        <option value="13">Rhode Island</option>
+                        <option value="12">South Carolina</option>
+                        <option value="11">South Dakota</option>
+                        <option value="10">Tennessee</option>
+                        <option value="9">Texas</option>
+                        <option value="8" >Utah</option>
+                        <option value="7">Vermont</option>
+                        <option value="6">Virginia</option>
+                        <option value="5">Washington</option>
+                        <option value="4">West Virginia</option>
+                        <option value="3">Wisconsin</option>
+                        <option value="2">Wyoming</option>
+                        <option value="1">I do not reside in the United States</option>
+               
+                        
+                    </select>
+                </div>
+            </div>
+	    
+             <div class="row question">
+                <div class="col-md-8">
+                   In which state did you grow up?
+                </div>
+                <div class="col-md-4">
+                    <select id="grewUp" name="grewUp">
+                        <option value="52"SELECTED>Alabama</option>
+                        <option value="51">Alaska</option>
+                        <option value="50">Arizona</option>
+                        <option value="49">Arkansas</option>
+                        <option value="48">California</option>
+                        <option value="47" >Colorado</option>
+                        <option value="47" >Connecticut</option>
+                        <option value="46">Delaware</option>
+                        <option value="45">District of Columbia</option>
+                        <option value="44">Florida</option>
+                        <option value="43">Georgia</option>
+                        <option value="42">Hawaii</option>
+                        <option value="41">Idaho</option>
+                        <option value="40">Illinois</option>
+                        <option value="39">Indiana</option>
+                        <option value="38" >Iowa</option>
+                        <option value="37">Kansas</option>
+                        <option value="36">Kentucky</option>
+                        <option value="35">Louisiana</option>
+                        <option value="34">Maine</option>
+                        <option value="33">Maryland</option>
+                        <option value="32">Massachusetts</option>
+                        <option value="31">Michigan</option>
+                        <option value="30">Minnesota</option>
+                        <option value="29" >Mississippi</option>
+                        <option value="28">Missouri</option>
+                        <option value="27">Montana</option>
+                        <option value="26">Nebraska</option>
+                        <option value="25">Nevada</option>
+                        <option value="24">New Hampshire</option>
+                        <option value="23">New Jersey</option>
+                        <option value="22">New Mexico</option>
+                        <option value="21">New York</option>
+                        <option value="20" >North Carolina</option>
+                        <option value="19">North Dakota</option>
+                        <option value="18">Ohio</option>
+                        <option value="17">Oklahoma</option>
+                        <option value="16">Oregon</option>
+                        <option value="15">Pennsylvania</option>
+                        <option value="14">Puerto Rico</option>
+                        <option value="13">Rhode Island</option>
+                        <option value="12">South Carolina</option>
+                        <option value="11">South Dakota</option>
+                        <option value="10">Tennessee</option>
+                        <option value="9">Texas</option>
+                        <option value="8" >Utah</option>
+                        <option value="7">Vermont</option>
+                        <option value="6">Virginia</option>
+                        <option value="5">Washington</option>
+                        <option value="4">West Virginia</option>
+                        <option value="3">Wisconsin</option>
+                        <option value="2">Wyoming</option>
+                        <option value="1">I did not grow up in the United States</option>
+               
+                        
+                    </select>
+                </div>
+            </div>
+	    
+            
+            
+             <div class="row question">
+                <div class="col-md-8">
+                   Which state do you consider your home state?
+                </div>
+                <div class="col-md-4">
+                    <select id="homeState" name="homeState">
+                        <option value="52"SELECTED>Alabama</option>
+                        <option value="51">Alaska</option>
+                        <option value="50">Arizona</option>
+                        <option value="49">Arkansas</option>
+                        <option value="48">California</option>
+                        <option value="47" >Colorado</option>
+                        <option value="47" >Connecticut</option>
+                        <option value="46">Delaware</option>
+                        <option value="45">District of Columbia</option>
+                        <option value="44">Florida</option>
+                        <option value="43">Georgia</option>
+                        <option value="42">Hawaii</option>
+                        <option value="41">Idaho</option>
+                        <option value="40">Illinois</option>
+                        <option value="39">Indiana</option>
+                        <option value="38" >Iowa</option>
+                        <option value="37">Kansas</option>
+                        <option value="36">Kentucky</option>
+                        <option value="35">Louisiana</option>
+                        <option value="34">Maine</option>
+                        <option value="33">Maryland</option>
+                        <option value="32">Massachusetts</option>
+                        <option value="31">Michigan</option>
+                        <option value="30">Minnesota</option>
+                        <option value="29" >Mississippi</option>
+                        <option value="28">Missouri</option>
+                        <option value="27">Montana</option>
+                        <option value="26">Nebraska</option>
+                        <option value="25">Nevada</option>
+                        <option value="24">New Hampshire</option>
+                        <option value="23">New Jersey</option>
+                        <option value="22">New Mexico</option>
+                        <option value="21">New York</option>
+                        <option value="20" >North Carolina</option>
+                        <option value="19">North Dakota</option>
+                        <option value="18">Ohio</option>
+                        <option value="17">Oklahoma</option>
+                        <option value="16">Oregon</option>
+                        <option value="15">Pennsylvania</option>
+                        <option value="14">Puerto Rico</option>
+                        <option value="13">Rhode Island</option>
+                        <option value="12">South Carolina</option>
+                        <option value="11">South Dakota</option>
+                        <option value="10">Tennessee</option>
+                        <option value="9">Texas</option>
+                        <option value="8" >Utah</option>
+                        <option value="7">Vermont</option>
+                        <option value="6">Virginia</option>
+                        <option value="5">Washington</option>
+                        <option value="4">West Virginia</option>
+                        <option value="3">Wisconsin</option>
+                        <option value="2">Wyoming</option>
+                        <option value="1">I do not reside in the United State</option>
+               
+                        
+                    </select>
+                </div>
+            </div>
+	    
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-7">
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>

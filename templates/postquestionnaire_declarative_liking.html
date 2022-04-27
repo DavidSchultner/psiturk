@@ -1,0 +1,80 @@
+<script type="text/javascript">
+    keydownfun = function() {}; // Should unbind keys.
+$('#postquiz').keypress(
+  function(event){
+    if (event.which == '13') {
+      event.preventDefault();
+    }
+});
+</script>
+
+<div id="container-questionnaire">
+    <hr>
+                
+
+    <div class="instructions well">
+
+        <form id="postquiz" action="debrief" method="post">
+
+
+            <!-- beginning of a question -->
+<!--             <div class="row question">
+                <div class="col-md-8">
+
+                </div>
+                <img src="static/images/face.jpg" alt="Face" style="width:200px;height:200px;"><br /><br />
+                <div class="col-md-4">
+                    <input id="choose" name="choose" type="text" maxlength="3">
+                    <br />
+                    <p id="invalid" style="color:black;">Please enter a number between 0 and 100.<br/></p>
+                </div>
+            </div> -->
+            <!-- end of a question -->
+
+
+                        <div class="row question">
+                <div class="col-md-8">
+           <h2>  How much do you like this player? (0-100)<h2><br /><br />
+                </div>
+                <img src="static/images/face.jpg" alt="Face" style="width:200px;height:200px;"><br /><br />
+                <div class="col-md-4">
+                    <input id="liking" style="width:200px;" name="liking" type="range" min="0" max="100" value = "50">
+                    <br />
+                    Answer: <span id="display"></span>
+                    <script>
+                    var slider = document.getElementById("liking");
+                    var output = document.getElementById("display");
+                    output.innerHTML = slider.value + '%';
+
+                    slider.oninput = function() {
+                      output.innerHTML = this.value+'%';
+                    }
+
+                        $(":input").change(function () {$("#next").prop("disabled", false);});
+                    </script>
+                </div>
+            </div>
+
+<br /><br />
+
+<div>
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue" disabled="TRUE">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+</div>
+
+<!--     <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-7">
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div> -->

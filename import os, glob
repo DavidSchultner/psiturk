@@ -1,0 +1,3 @@
+import os, glob
+for sub in subjects:
+    folder = os.listdir('raw/'+sub)[11][-2:]

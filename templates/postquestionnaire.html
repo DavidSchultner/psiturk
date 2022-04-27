@@ -1,0 +1,110 @@
+<script type="text/javascript">
+  keydownfun = function() {}; // Should unbind keys.
+</script>
+
+<div id="container-questionnaire">
+    <h1>Background Info</h1>
+
+    <hr>
+
+    <div class="instructions well">
+
+        <form id="postquiz" action="debrief" method="post">
+
+
+            <div class="row question">
+                <div class="col-md-8">
+                    On a scale of 1-10 (where 10 is the most difficult), please rate how <b>DIFFICULT</b> you found the learning task:
+                </div>
+                <div class="col-md-4">
+                    <select id="difficulty" name="difficulty">
+                        <option value="10">10 - Very difficult</option>
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5" SELECTED>5 - Moderately difficult</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                        <option value="0">0 - Not difficult at all</option>
+                    </select>
+                </div>
+            </div>
+            <!-- end of a question -->
+        </form>
+    </div>
+
+
+		
+
+            <div class="question">
+                <div class="col-md-8">
+                   For statistical purposes, please select your gender
+		</div>
+                <div class="col-md-4">
+                    <select id="gender" name="engagement">
+                        <option value="-1" selected="">(Select One)</option>
+                        <option value="other">Other</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                         <option value="transfemale">Transgender Female</option>
+                        <option value="transmale">Transgender Male</option>
+                        <option value="nonconforming">Nonconforming</option>
+                    </select>
+		</div>
+	    </div>
+	    
+	     <div class="row question">
+                <div class="col-md-8">
+                   For statistical purposes, please select your race:
+                </div>
+                <div class="col-md-4">
+                    <select id="race" name="race">
+                        <option value="7"SELECTED>Other</option>
+                        <option value="6">Pacific Islander</option>
+                        <option value="5">Native American</option>
+                        <option value="4">Asian</option>
+                        <option value="3">Hispanic</option>
+                        <option value="2" >African American</option>
+                        <option value="1">White/Caucasian</option>
+                    </select>
+                </div>
+            </div>
+	    
+<br><br>
+       For statistical purposes, please list your age.<br/>
+        <textarea rows="2" cols="20" name="age" id="age"></textarea>
+
+    <hr>	
+   
+<br><br>
+        Were the instructions clear to you? In particular, did you have any trouble with the response procedure or did you find it was too slow or too fast for you? Did the game make sense to you? We would appreciate any feedback so we can improve the task in the future.<br/>
+        <textarea rows="10" cols="80" name="comment_form" id="comment_form"></textarea>
+
+        
+<br><br>
+        To enable us to pay out your bonus, please enter your worker ID.<br/>
+        <textarea rows="1" cols="60" name="worker_ID" id="worker_ID"></textarea>
+
+    <hr>
+
+    <hr>
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-7">
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>

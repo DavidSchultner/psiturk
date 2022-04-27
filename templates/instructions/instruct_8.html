@@ -1,0 +1,40 @@
+<script>
+
+setTimeout(function(){ $('div#nextButton').css('visibility','visible'); }, INST_WAIT_TIME);
+
+</script>
+
+<div class="instruct" id="main">
+
+<p>Are you ready to begin?
+First, you’ll have to show that you know which player belongs to which group. You’ll be shown one player at a time, and we will ask you to classify which group he or she belongs to.</p>
+
+<p>Press the LEFT arrow key if the player is from Group B, and the RIGHT arrow key if the player is from Group G.</p>
+
+
+<img src="static/images/classify.jpg" alt="press left for B, right for G" style="width:613px;height:253px;">
+
+
+<p></p>
+    
+
+
+    
+        <div id="nextButton" style="visibility: hidden;">
+If you're ready, click:  <strong>NEXT</strong>.    
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+                <!-- no previous button on first screen -->
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                NEXT <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

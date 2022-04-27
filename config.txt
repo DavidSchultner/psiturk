@@ -1,0 +1,51 @@
+[HIT Configuration]
+title = Social Learning and Choice Game
+description = Win Money in a Social Game
+amt_keywords = Psychology, Neuroscience, game, face, faces
+lifetime = 24
+us_only = false
+approve_requirement = 95
+contact_email_on_error = d.t.schultner@uva.nl
+ad_group = Default
+psiturk_keywords = choice task
+organization_name = NYU
+browser_exclude_rule = MSIE, mobile, tablet
+#below is new
+#ad_location = https://calm-plains-28238.herokuapp.com/pub
+
+
+[Database Parameters]
+database_url = postgres://yruexhbkdemecn:b03485e632edecdd1cc2293e89eaef8d6231daf9a49f5ed4108e137160c14115@ec2-52-3-200-138.compute-1.amazonaws.com:5432/d91skpmk89timh
+host = 0.0.0.0
+threads = 1
+ad_location = https://whispering-tundra-55151.herokuapp.com/pub
+use_psiturk_ad_server = false
+
+#database_url = sqlite:///participants.db
+##below is new
+##database_url = postgres://ydfyqcaecuoolw:eb7e24a74790bb170e6b69dbbeeba3d02aa73bc06bdc7233faf9a67a7aa33c76@ec2-3-223-213-207.compute-1.amazonaws.com:5432/db90f31ccek9o3
+
+table_name = psst_study4
+
+[Server Parameters]
+host = 0.0.0.0
+port = 22362
+cutoff_time = 80
+logfile = server2.log
+loglevel = 2
+debug = false
+login_username = examplename
+login_pw = examplepassword
+threads = auto
+#threads = 1
+#below is new
+#use_psiturk_ad_server = false
+
+
+[Task Parameters]
+experiment_code_version = 2.0
+num_conds = 78
+num_counters = 1
+
+[Shell Parameters]
+launch_in_sandbox_mode = true
